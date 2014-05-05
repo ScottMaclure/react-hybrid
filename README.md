@@ -11,11 +11,13 @@ npm install
 npm start
 ```
 
+**Note:** nodemon will automatically restart if you change server.js, or any js/json file. See package.json for command.
+
 Some test URLs:
 
-[http://localhost:7000/]
+<http://localhost:7000/>
 
-[http://localhost:7000/mirror/happy]
+<http://localhost:7000/mirror/happy>
 
 ## Technology Stack
 
