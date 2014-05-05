@@ -2,7 +2,7 @@
 
 ## Goals
 
-* Render ReactJS on server and/or client.
+* Render ReactJS on server and/or client. Avoid any other kind of templating, do as much in ReactJS as possible.
 
 ## Setup + Install
 
