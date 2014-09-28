@@ -10,7 +10,8 @@ var express = require('express'),
 
 var app = express();
 
-app.set('port', process.env.PORT || 7000);
+// For openshift.
+app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 7000);
 
 // Static file server.
 app.use(serveStatic(path.join(__dirname, 'public')));
