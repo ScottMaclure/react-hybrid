@@ -4,6 +4,7 @@
 
 var React = require('react');
 var helloReactComponent = require('../components/HelloReact');
+var FragmentHelper = require('../libs/FragmentHelper');
 
 /**
  * Longhand demo showing each step, for debugging etc.
@@ -16,9 +17,9 @@ exports.helloReact = function (req, res) {
 
 	var component = helloReactComponent(props);
 
-	var html = React.renderComponentToString(component);
+	var reactHtml = React.renderComponentToString(component);
 
-	res.send(html);
+	res.send(FragmentHelper.renderPage('index', reactHtml));
 
 };
 
