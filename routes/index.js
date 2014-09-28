@@ -3,7 +3,7 @@
  */
 
 exports.helloWorld = function (req, res) {
-	res.send('Hello, World! (Need a template engine');
+	res.send('Hello, World! (Need a template engine)');
 }
 
 /**

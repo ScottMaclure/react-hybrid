@@ -9,7 +9,7 @@ var express = require('express'),
 	http = require('http'),
 	path = require('path');
 
-var app = express();	
+var app = express();
 
 app.set('port', process.env.PORT || 7000);
 
@@ -33,5 +33,5 @@ app.route('/mirror/:inputString').get(indexRoute.mirror);
 
 // @see http://stackoverflow.com/questions/17696801/express-js-app-listen-vs-server-listen
 app.listen(app.get('port'), function () {
-	console.log("HTTP server listening on port " + app.get('port'));
+	console.log("HTTP server listening on: http://localhost:" + app.get('port'));
 });

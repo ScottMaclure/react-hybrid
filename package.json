@@ -13,7 +13,6 @@
         "browserify": "*"
     },
     "dependencies": {
-        "grunt": "*",
         "express": "*",
         "serve-static": "*",
         "errorhandler": "*",
