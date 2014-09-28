@@ -1,0 +1,4 @@
+# Openshift deploy script
+# https://developers.openshift.com/en/getting-started-modifying-applications.html
+echo 'Deploying app.'
+npm start

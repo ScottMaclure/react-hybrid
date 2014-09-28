@@ -1,0 +1,5 @@
+# Openshift build script
+# https://developers.openshift.com/en/getting-started-modifying-applications.html
+echo 'Building app.'
+npm prune
+npm install
