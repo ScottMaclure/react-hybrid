@@ -9,11 +9,21 @@ var React = require('react'),
 
 module.exports = React.createClass({
 
+	propTypes: {
+		title: React.PropTypes.string
+	},
+
+	getDefaultProps: function () {
+		return {
+			title: 'World'
+		};
+	},
+
 	render: function () {
 
 		return div(
 			{ className: 'helloWorld' },
-			'Hello, ReactWorld!'
+			'Hello, ' + this.props.title + '!'
 		);
 
 	}

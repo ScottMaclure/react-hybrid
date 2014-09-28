@@ -28,15 +28,14 @@ var indexRoute = require('./routes/index');
 // Bind routes
 
 // Test routes.
-app.route('/').get(indexRoute.helloWorld);
-app.route('/helloWorld').get(indexRoute.helloWorld);
+app.route('/').get(indexRoute.helloReact);
 app.route('/mirror/:inputString').get(indexRoute.mirror);
 
 // React routes.
-app.route('/helloReact').get(indexRoute.helloReact);
+// e.g. http://localhost:7000/hello/Jupiter
+app.route('/hello/:title').get(indexRoute.helloReact);
 
 // @see http://stackoverflow.com/questions/17696801/express-js-app-listen-vs-server-listen
 app.listen(app.get('port'), function () {
 	console.log('HTTP server listening on: http://localhost:' + app.get('port'));
 });
-
