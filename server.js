@@ -6,7 +6,6 @@
 var express = require('express'),
 	serveStatic = require('serve-static'),
 	errorHandler = require('errorhandler'),
-	http = require('http'),
 	path = require('path');
 
 var app = express();
@@ -27,11 +26,17 @@ app.use(errorHandler());
 var indexRoute = require('./routes/index');
 
 // Bind routes
-// Won't need that many.
+
+// Test routes.
 app.route('/').get(indexRoute.helloWorld);
+app.route('/helloWorld').get(indexRoute.helloWorld);
 app.route('/mirror/:inputString').get(indexRoute.mirror);
+
+// React routes.
+app.route('/helloReact').get(indexRoute.helloReact);
 
 // @see http://stackoverflow.com/questions/17696801/express-js-app-listen-vs-server-listen
 app.listen(app.get('port'), function () {
-	console.log("HTTP server listening on: http://localhost:" + app.get('port'));
+	console.log('HTTP server listening on: http://localhost:' + app.get('port'));
 });
+
