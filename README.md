@@ -23,6 +23,12 @@ Some test URLs:
 
 <http://localhost:7000/helloPlanets/Mercury,Venus,Earth,Mars,Jupiter,Saturn,Uranus,Neptune>
 
+## Running on maclure.com.au server
+
+`forever start server.js`
+
+<http://react-hybrid.maclure.com.au/helloPlanets/Mercury,Venus,Earth,Mars,Jupiter,Saturn,Uranus,Neptune>
+
 ## Technology Stack
 
 * git, github
