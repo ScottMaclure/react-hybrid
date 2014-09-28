@@ -27,13 +27,19 @@ exports.helloReact = function (req, res) {
 /**
  * Testing nested react components.
  */
-exports.helloApp = function (req, res) {
+exports.helloPlanets = function (req, res) {
 
-	var components = [
-		helloReactComponent({ title: 'Mercury' }),
-		helloReactComponent({ title: 'Venus' }),
-		helloReactComponent({ title: 'Earth' })
-	];
+	var planets = (req.params.planets || '').split(',');
+
+	if (planets.length === 0) {
+		planets = [ 'Earth' ];
+	}
+
+	var components = [];
+
+	planets.forEach(function (planet) {
+		components.push(helloReactComponent({ title: planet }));
+	});
 
 	var app = helloAppComponent({ components: components });
 

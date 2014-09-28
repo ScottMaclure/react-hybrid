@@ -19,6 +19,10 @@ Some test URLs:
 
 <http://localhost:7000/mirror/happy>
 
+<http://localhost:7000/hello/Jupiter>
+
+<http://localhost:7000/helloPlanets/Mercury,Venus,Earth,Mars,Jupiter,Saturn,Uranus,Neptune>
+
 ## Technology Stack
 
 * git, github
