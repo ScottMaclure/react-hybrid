@@ -1,24 +1,25 @@
 {
-    "name": "react-hybrid",
-    "version": "0.0.1",
-    "authors": [
-        "Scott Maclure <scott@maclure.com.au>"
-    ],
-    "description": "Using Facebook's React to render on BOTH server and/or client.",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ScottMaclure/react-hybrid.git"
-    },
-    "devDependencies": {
-        "browserify": "*"
-    },
-    "dependencies": {
-        "express": "*",
-        "serve-static": "*",
-        "errorhandler": "*",
-        "nodemon": "*"
-    },
-    "scripts": {
-        "start": "node_modules/.bin/nodemon -e js,json server.js"
-    }
+  "name": "react-hybrid",
+  "version": "0.0.1",
+  "authors": [
+    "Scott Maclure <scott@maclure.com.au>"
+  ],
+  "description": "Using Facebook's React to render on BOTH server and/or client.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScottMaclure/react-hybrid.git"
+  },
+  "devDependencies": {
+    "browserify": "^5.12.1"
+  },
+  "dependencies": {
+    "express": "^4.9.5",
+    "serve-static": "^1.6.3",
+    "errorhandler": "^1.2.0",
+    "nodemon": "^1.2.1",
+    "react": "^0.11.2"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/nodemon -e js,json server.js"
+  }
 }
