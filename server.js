@@ -34,6 +34,7 @@ app.route('/mirror/:inputString').get(indexRoute.mirror);
 // React routes.
 // e.g. http://localhost:7000/hello/Jupiter
 app.route('/hello/:title').get(indexRoute.helloReact);
+app.route('/helloApp').get(indexRoute.helloApp);
 
 // @see http://stackoverflow.com/questions/17696801/express-js-app-listen-vs-server-listen
 app.listen(app.get('port'), function () {
