@@ -37,6 +37,7 @@ app.route('/mirror/:inputString').get(indexRoute.mirror);
 app.route('/hello/:title').get(indexRoute.helloReact);
 
 // e.g. http://localhost:7000/helloPlanets/Mercury,Venus,Earth,Mars,Jupiter,Saturn,Uranus,Neptune
+app.route('/helloPlanets').get(indexRoute.helloPlanets);
 app.route('/helloPlanets/:planets').get(indexRoute.helloPlanets);
 
 // @see http://stackoverflow.com/questions/17696801/express-js-app-listen-vs-server-listen

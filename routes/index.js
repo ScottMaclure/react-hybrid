@@ -31,7 +31,7 @@ exports.helloPlanets = function (req, res) {
 
 	var planets = (req.params.planets || '').split(',');
 
-	if (planets.length === 0) {
+	if (planets[0].trim() === '') {
 		planets = [ 'Earth' ];
 	}
 
