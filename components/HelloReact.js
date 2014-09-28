@@ -23,6 +23,7 @@ module.exports = React.createClass({
 
 		return div(
 			{ className: 'helloWorld' },
+			// FIXME Escape html for render.
 			'Hello, ' + this.props.title + '!'
 		);
 
